@@ -1,0 +1,201 @@
+body {
+  background-color: #191931;
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+#heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  margin: 3rem auto;
+  width: 480px;
+  height: 800px;
+  border-radius: 15px;
+  box-shadow: 13px 13px 0 rgb(197, 188, 188);
+}
+
+#card #input p {
+  margin-top: 2rem;
+  color: black;
+  font-size: 18px;
+  margin-left: 1rem;
+}
+
+#search-input {
+  width: 13rem;
+  height: 2.5rem;
+  margin-bottom: 3rem;
+  padding: 0 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#search-button {
+  font-size: 15px;
+  background-color: #8324a7;
+  color: white;
+  height: 3rem;
+  width: 5rem;
+  margin-left: 0.5rem;
+  border-radius: 17px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#search-button:hover {
+  background-color: #6a1a8c;
+}
+
+#output_1 {
+  visibility: hidden;
+  color: black;
+  padding: 10px;
+  width: 90%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#creature-name {
+  font-weight: bold;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#creature-id {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.creature-dimensions {
+  display: flex; 
+  justify-content: center; 
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+#weight,
+#height {
+  font-size: 16px;
+  margin: 0; 
+  padding: 0;
+}
+
+#types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#types span {
+  background-color: grey;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+#specialty {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.special-name {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.special-description {
+  font-style: italic;
+  font-size: 15px;
+  display: block;
+}
+
+#output_2 {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+  width: 100%;
+  table-layout: fixed;
+  margin: 0 auto;
+}
+
+td,
+th {
+  background-color: #8324a7;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+th:first-child,
+td:first-child {
+  width: 70%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+th:last-child,
+td:last-child {
+  width: 30%;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  #card {
+    width: 95%;
+    height: auto;
+    margin: 1rem auto;
+  }
+  #search-input {
+    width: 60%;
+  }
+  #search-button {
+    width: 30%;
+  }
+  #output_1,
+  #output_2 {
+    padding: 5px;
+  }
+  table {
+    font-size: 16px;
+  }
+  td,
+  th {
+    padding: 8px;
+    font-size: 16px;
+  }
+  th:first-child,
+  td:first-child {
+    width: 60%;
+  }
+  th:last-child,
+  td:last-child {
+    width: 40%;
+  }
+}
